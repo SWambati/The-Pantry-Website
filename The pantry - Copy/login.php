@@ -1,0 +1,63 @@
+<?php
+include("connection.php");
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="description" content="Login">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    </head>
+    <body class="login">
+        <header>
+            <nav class="navigation">
+                <div class="logo"><a href="index.html" target="_blank"></a>
+
+                    <img src="images/logo.png"><h2 id="pantry">The Pantry</h2>
+                        
+                </div>
+            </nav>
+        </header>
+        <div class="login1">
+            <form action="login2.php" method="POST">
+                <h1>Login</h1>
+                
+                <div class="input-box">
+                    <input type="number" name="userID" placeholder="User ID" required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class="fa fa-lock"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="userType" placeholder="User type:" required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="" target="_blank">Forgot password?</a>
+                </div>
+                <input class="submit" type="submit" value="Login" name="submit">
+                <div class="register">
+                    <p>Don't have an account? <a href="registration.php" target="_blank">Register</a></p>
+                </div>
+
+
+            </form>
+           
+            
+            
+        </div>
+
+    </body>
+    
+
+</html>

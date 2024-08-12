@@ -1,0 +1,653 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/background1.jpeg);
+    background-image: linear-gradient(rgb(244, 226, 203));
+    background-color: rgb(244, 226, 203);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header1{
+    position: top;
+    top: 0;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+.logo {
+    display: flex;
+    justify-content: left;
+   text-align: left;
+   float: left;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   
+}
+#pantry{
+    color: brown;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    size: 30px;
+}
+#pantry:hover{
+    color: burlywood;
+}
+ 
+.logo img {
+    width: 90px;
+    height: 105px;
+    border-radius: 100px; 
+    background: transparent;
+    size: 20px;
+}
+.navigation{
+    display: flex; 
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.tabs{
+    width: 400px;
+    float: right;
+    height: 80px;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.tabs ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs ul li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 5px;
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+   
+}
+.recipes{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 3px;
+    display: flex;
+    margin-bottom: 5px;
+    position: relative;
+   
+}
+.tabs ul li a{
+    text-decoration: none;
+    color:brown;
+    transition: all 0.3s;
+}
+.tabs ul li a:hover{
+    color: burlywood;
+}
+.rightnavigation {
+    width: 500px;
+    text-align: right;
+    padding: 30px;
+    
+}
+.categories{
+    display: none;
+}
+.tabs ul li:hover .categories{
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(245, 237, 226);
+    
+}
+.tabs ul li:hover .categories ul{
+    display:block;
+    margin: 10px;
+}
+.tabs ul li:hover .categories ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fa-caret-down{
+    float:right;
+    margin-left:10px;
+    padding-top: 3px;
+}
+.appetizers{
+    display: none;
+}
+.categories ul li:hover .appetizers{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 150px;
+    background-color: rgb(245, 237, 226);
+
+}
+.mainCourse{
+    display: none;
+}
+.categories ul li:hover .mainCourse{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 150px;
+    background-color: rgb(245, 237, 226);
+
+}
+.breakfast{
+    display: none;
+}
+.categories ul li:hover .breakfast{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 70px;
+    background-color: rgb(245, 237, 226);
+
+}
+.drinks{
+    display: none;
+}
+.categories ul li:hover .drinks{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 70px;
+    background-color: rgb(245, 237, 226);
+
+}
+.main1{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color:brown;
+        margin-top: 70px;
+    }
+.main1 h1{
+    font-size: 50px;
+}
+.signin{
+  
+    text-align: right;
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(153, 96, 25);
+    border: 2px solid rgb(239, 221, 198);
+    padding: 20px 30px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    top: 80%;
+    margin-right: 450px;
+    background-color: rgb(239, 221, 198);
+    margin-top: 50px;
+    margin: 20px 10px;
+    font-weight: bolder;
+
+}
+.signin:hover{
+    
+    border: 2px bisque;
+    background: burlywood;
+    transition: 1s;
+}
+.cookingClass{
+    text-align: left;
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(153, 96, 26);
+    border: 2px solid rgb(239, 221, 198);
+    padding: 20px 30px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    top: 70%;
+    bottom: 30;
+    margin-left: 300px;
+    background-color: rgb(239, 221, 198);
+    margin-top: -60px;
+    margin: 20px 10px;
+    font-weight: bolder;
+
+}
+.cookingClass:hover{
+    border: 2px bisque;
+    background: burlywood;
+    transition: 1s;
+}
+.topPicks{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url(images/homepage2.1.jpeg);
+    background-image: linear-gradient(rgb(244, 226, 203));
+    background-size: cover;
+}
+.topPicks h2{
+    font-size: 40px;
+    color: brown;
+    text-align: center;
+   
+}
+.pics-row{
+    margin-top: 3%;
+    display:flex;
+    justify-content: space-between;
+   
+    
+    
+}
+.pics-row img{
+    size: 100px;
+    height: 180px;
+    width:140px;
+    cursor: pointer;
+
+}
+.pics-row li{
+    list-style: none;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+}
+.pics-row li a{
+    text-decoration: none;
+    color:brown;
+    transition: all 0.3s;
+
+}
+.pics-row li a:hover{
+    color: rgb(227, 133, 18);
+    
+}
+.testimonials{
+    width: 100%;
+    background-color: rgb(239, 221, 198);
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    cursor: pointer;
+}
+.testimonials h2{
+    color: brown;
+    font-size: 36px;
+    font-weight: 600;
+}
+.testimonials-row{
+    margin-top: 3%;
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials-column b{
+    font-weight: bold;
+}
+.testimonials-column{
+    flex-basis: 31%;
+    background: rgb(228, 192, 144);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.testimonials-column:hover{
+    border: 2px bisque;
+    background: bisque;
+    transition: 1s;
+}
+.endnotes{
+    width: 100%;
+    background-color: rgb(239, 221, 198);
+    padding: 30px 0;
+    cursor: pointer;
+    color: brown;
+    border-style:groove;
+    border-color: bisque;
+}
+.info{
+    text-align: left;
+    margin-left: 20px;
+}
+.socials{
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 30px;
+    
+}
+.carbonara{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width:100%;
+
+}
+ .header2{
+   align-items: center;
+   
+}
+.header2 img{
+    align-items: center;
+    margin: 70px;
+    margin-left: 300px;
+    size:100px;
+    border-color: brown;
+    
+}  
+.header2 h1{
+    text-align: center;
+    padding-top: 15px;
+}
+.content{
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+}
+.ingredients{
+    background-color: bisque;
+    padding-left: 30px ;
+}
+.about1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Page2.jpeg);
+    background-image: linear-gradient(rgb(244, 226, 203));
+    background-color: rgb(244, 226, 203);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.top{
+    position: top;
+    top: 0;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+}
+.top img{
+    width: 90px;
+    height: 105px;
+    border-radius: 100px; 
+    background: transparent;
+    size: 20px;
+}
+.top h2{
+    text-decoration: none;
+}
+.top #pantry{
+    text-decoration: none;
+}
+.title1{
+       width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color:brown;
+        margin-top: 70px;
+        font-size: 40px;
+        margin-left: 450px;
+}
+.information{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:brown;
+    margin-top: 70px;
+    flex-basis: 31%;
+    background-color: rgb(219, 198, 179);
+    border-radius: 20px;
+    margin-bottom: 10%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.catering{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/catering.jpeg);
+    background-image: linear-gradient(rgb(244, 226, 203));
+    background-color: rgb(244, 226, 203);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+.header3 h1{
+    color: brown;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 350px;
+    position: relative;
+    display: flex;
+    transform: translateY(-50%);
+}
+.catering1{
+    color: rgb(144, 19, 19);
+    text-align: center;
+    padding: 100px;
+    margin-top: 150px;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: 50px;
+    font-size: large;
+}
+.footer2{
+    color: rgb(144, 19, 19);
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 50%;
+    font-size: large;
+}
+.footer3{
+    color: rgb(103, 7, 7);
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 47%;
+    font-size: larger;
+
+    
+}
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/contact.jpeg);
+    background-image: linear-gradient(rgb(244, 226, 203));
+    background-color: rgb(244, 226, 203);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+.contact1 h1{
+    text-align: center;
+    margin-right: 200px;
+    padding-top: 70px;
+    color: brown;
+}
+.sub{
+    text-align: left;
+    color: brown;
+    font-size: larger;
+    padding-top: 50px;
+    margin-left: 400px;
+}
+.contact-info{
+    text-align: center;
+    padding-top: 50px;
+    color: brown;
+    font-size: larger;
+}
+.contact-info .fa{
+    size: 30px;
+}
+.login{
+    background-image:url(images/download\ \(2\).jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}  
+.login1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(235, 223, 208);
+    box-sizing: border-box;
+    border-radius: 10px;
+  ;
+  
+}
+.login1 h1{
+    font-size: 36px;
+    text-align: center;
+    color: rgb(128, 28, 28);
+   
+
+}
+.login1 .input-box{
+    position: relative;
+    width: 120%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(128, 28, 28);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(235, 223, 208);
+    
+    
+   
+}
+.input-box input::placeholder{
+    color:rgb(235, 223, 208);
+
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+}
+.login1 .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: -15px 0 15px;
+    
+
+}
+.remember label input{
+    accent-color: rgb(217, 31, 31);
+    margin-right: 3px;
+    margin-left: 5px;
+}
+.remember a{
+    color: rgb(130, 25, 25);
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.remember a:hover{
+    text-decoration: underline;
+
+}
+.login1 .submit{
+    width: 120%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgb(128, 28, 28);
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: brown;
+    font-weight: 600;
+}
+.login1 .register{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register p a{
+    color: rgb(130, 25, 25);
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.display{
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url(images/homepage2.1.jpeg);
+    background-image: linear-gradient(rgb(244, 226, 203));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.display .navigation{
+    display: flex; 
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0%;
+   
+
+}
+.display h2{
+    font-size: 40px;
+    color: brown;
+    text-align: center;
+    padding-top: 0px;
+}
+.display .userTable{
+    text-align: center;
+    padding-top: 45px;
+    align-items: center;
+
+}
+.userTable th{
+    color: brown;
+    font-size: 30px;
+}
+.userTable td{
+    color: rgb(125, 14, 14);
+    font-weight: 25px;
+}
